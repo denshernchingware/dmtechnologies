@@ -1089,7 +1089,7 @@ html {
   .hamburger span {
     width: 30px;
     height: 4px;
-    margin-left: -60px;
+    margin-left: -100px;
 }
 
   .stats-counter {
