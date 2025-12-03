@@ -1085,6 +1085,13 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .hamburger span {
+    width: 30px;
+    height: 4px;
+    margin-left: -60px;
+}
+
   .stats-counter {
     gap: 2.5rem;
     margin-top: 4rem;
