@@ -481,6 +481,7 @@ body {
   height: 56px;
   stroke: currentColor;
   stroke-width: 1.8;
+  color:#007bff;
 }
 
 .value-card h4 {
@@ -1130,7 +1131,7 @@ html {
   }
 
   .portfolio { padding: 1rem 7% 3rem; }
-  .projects-grid { gap: 2.5rem; }
+  .projects-grid { gap: 2.5rem;}
   .project-card {height: 400px }
   .project-image { height: 80px; }
 
