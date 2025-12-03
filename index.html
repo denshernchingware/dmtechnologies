@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load counter only after page loads -->
+    <script src="js.js" defer></script>
+
+<svg width="0" height="0">
+  <defs>
+    <linearGradient id="gradient-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ddeb" />
+      <stop offset="100%" stop-color="#007bff" />
+    </linearGradient>
+  </defs>
+</svg>
+
+</head>
+<body>
+
+<!--Hero section-->
+<!-- <header>
+  <div class="logo">TechNova</div>
+  <nav>
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#contact" class="get-started-btn">Get Started</a>
+</header> -->
+
+<header class="header">
+  <div class="logo">TechNova</div>
+
+  <!-- Desktop Nav -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a href="#contact" class="get-started-btn desktop-only">Get Started</a>
+
+  <!-- Hamburger Button -->
+  
+    <button class="hamburger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  
+</header>
+
+<!-- Mobile Menu (hidden by default) -->
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="logo">TechNova</div>
+    <button class="close-menu" aria-label="Close menu">×</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#contact" class="mobile-cta-btn">Get Started</a>
+  </nav>
+</div>
+
+<!-- Overlay -->
+<div class="menu-overlay"></div>
+
+  <section class="hero" id = "home">
+    <div class="badge">
+      <span>✨</span> Innovation Meets Excellence
+    </div>
+
+    <h1>
+      Building the <span class="gradient-text">Future</span><br>
+      of Digital Solutions
+    </h1>
+
+    <p>
+      We craft cutting-edge web applications, intelligent ML solutions, 
+      and stunning designs that transform businesses.
+    </p>
+
+    <div class="btn-group">
+      <a href="#" class="btn-primary">View Our Work →</a>
+      <a href="#" class="btn-secondary">Get in Touch</a>
+    </div>
+
+    <!-- Stats Counter -->
+    <!-- Stats Counter - FIXED VERSION -->
+    <div class="stats-counter">
+    <div class="stat-item">
+        <div class="stat-number" data-target="100">0</div>
+        <span class="plus">+</span>
+        <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number" data-target="50">0</div>
+        <span class="plus">+</span>
+        <div class="stat-label">Happy Clients</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number" data-target="5">0</div>
+        <span class="plus">+</span>
+        <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number" data-target="99">0</div>
+        <span class="percent">%</span>
+        <div class="stat-label">Client Satisfaction</div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+<!-- ABOUT SECTION - FINAL CLEAN VERSION -->
+<section class="about" id="about">
+  <div class="container">
+    <!-- Top Centered Header -->
+    <div class="about-header text-center">
+      <div class="section-badge">Who We Are</div>
+      <h2>About <span class="gradient-text">TechNova</span></h2>
+      <p class="about-subtitle">
+        We are a team of passionate technologists, designers, and innovators dedicated<br>
+        to transforming ideas into exceptional digital experiences.
+      </p>
+    </div>
+
+    <!-- Two Column: Text + Image -->
+    <div class="about-content-grid">
+      <div class="about-text-content">
+        <h3>Empowering Businesses Through Technology</h3>
+        <p>
+          Founded with a vision to bridge the gap between technology and business, TechNova specializes in three core areas: <strong>Web Development</strong>, <strong>Machine Learning</strong>, and <strong>Graphics Design</strong>.
+        </p>
+        <p>
+          Our multidisciplinary approach allows us to tackle complex challenges from multiple angles, delivering comprehensive solutions that combine beautiful design, robust functionality, and intelligent automation.
+        </p>
+        <p>
+          Whether you're a startup looking to establish your digital presence or an enterprise seeking to innovate, we have the expertise and creativity to bring your vision to life.
+        </p>
+      </div>
+
+      <div class="about-image-side">
+        <!-- Your transparent PNG image goes here -->
+        <img src="images/roboto5.png" alt="TechNova Team" class="main-about-image" />
+      </div>
+    </div>
+
+  <!-- VALUES SECTION - FINAL PRO VERSION -->
+<div class="values-grid">
+  <div class="value-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+        <circle cx="12" cy="12" r="6" stroke-width="2"/>
+        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+      </svg>
+    </div>
+    <h4>Mission-Driven</h4>
+    <p>We’re committed to delivering solutions that drive real business value and exceed expectations.</p>
+  </div>
+
+  <div class="value-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+    </div>
+    <h4>Client-Focused</h4>
+    <p>Your success is our success. We work closely with you to understand and achieve your goals.</p>
+  </div>
+
+  <div class="value-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+    </div>
+    <h4>Innovation First</h4>
+    <p>We leverage cutting-edge technologies to keep you ahead in the digital landscape.</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- SERVICES SECTION - EXACTLY LIKE YOUR DESIGN -->
+<section class="services" id="services">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header text-center">
+      <div class="section-badge">What We Offer</div>
+      <h2>Our <span class="gradient-text">Services</span></h2>
+      <p class="section-subtitle">
+        Comprehensive solutions across web development, machine learning, and design to power your digital transformation.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+
+      <!-- Web Development -->
+      <div class="service-card">
+        <div class="service-icon">
+          <div class="icon-bg"></div>
+          <span>&lt;&#47;&gt;</span>
+        </div>
+        <h3>Web Development</h3>
+        <p>Building responsive, scalable, and performant web applications tailored to your needs.</p>
+        <ul class="service-list">
+          <li>Frontend Development (React, Next.js, Vue)</li>
+          <li>Backend Development (Node.js, Python, APIs)</li>
+          <li>Full-Stack Solutions</li>
+          <li>E-commerce Platforms</li>
+        </ul>
+      </div>
+
+      <!-- Machine Learning & AI -->
+      <div class="service-card">
+        <div class="service-icon brain">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+            <path d="M9 16s1-2 3-2 3 2 3 2"/>
+            <circle cx="9" cy="10" r="1"/>
+            <circle cx="15" cy="10" r="1"/>
+          </svg>
+        </div>
+        <h3>Machine Learning & AI</h3>
+        <p>Leveraging data-driven insights and intelligent automation to transform your business.</p>
+        <ul class="service-list">
+          <li>Custom ML Model Development</li>
+          <li>Predictive Analytics</li>
+          <li>Natural Language Processing</li>
+          <li>Computer Vision Solutions</li>
+          <li>AI Integration & Consulting</li>
+        </ul>
+      </div>
+
+      <!-- Graphics & Design -->
+      <div class="service-card">
+        <div class="service-icon design">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <path d="M9 9h.01"/>
+            <path d="M15 9h.01"/>
+          </svg>
+        </div>
+        <h3>Graphics & Design</h3>
+        <p>Creating stunning visual identities and user experiences that captivate and convert.</p>
+        <ul class="service-list">
+          <li>UI/UX Design</li>
+          <li>Brand Identity & Logos</li>
+          <li>Marketing Materials</li>
+          <li>Illustration & Animation</li>
+          <li>Design Systems</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO / FEATURED PROJECTS SECTION -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header text-center">
+      <div class="section-badge">Our Work</div>
+      <h2>Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">
+        A showcase of our latest work across web development, machine learning, and design.
+      </p>
+    </div>
+
+    <!-- Projects Grid - ALL 6 PROJECTS (2 rows of 3) -->
+    <div class="projects-grid">
+
+    <!-- ROW 1 -->
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/Webdev.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Web Development</span>
+        <h3>E-Commerce Platform</h3>
+        <p>Full-stack e-commerce solution with payment integration, inventory management, and analytics.</p>
+        <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Stripe</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/Ml.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Machine Learning</span>
+        <h3>Predictive Analytics Dashboard</h3>
+        <p>ML-powered dashboard for sales forecasting and customer behavior analysis.</p>
+        <div class="project-tags">
+            <span>Python</span><span>TensorFlow</span><span>React</span><span>FastAPI</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/Brand.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Graphics Design</span>
+        <h3>Brand Identity System</h3>
+        <p>Complete brand identity including logo, style guide, and marketing materials.</p>
+        <div class="project-tags">
+            <span>Figma</span><span>Adobe Suite</span><span>Design Systems</span>
+        </div>
+        </div>
+    </div>
+
+    <!-- ROW 2 - NEW PROJECTS -->
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/Health.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Web Development</span>
+        <h3>Healthcare Management App</h3>
+        <p>Patient management system with appointment scheduling and telemedicine features.</p>
+        <div class="project-tags">
+            <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/imagerec.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Machine Learning</span>
+        <h3>Image Recognition System</h3>
+        <p>Custom computer vision model for quality control in manufacturing.</p>
+        <div class="project-tags">
+            <span>PyTorch</span><span>OpenCV</span><span>Docker</span><span>AWS</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+        <img src="images/ui.webp" alt="E-Commerce Platform" class="project-img">
+        </div>
+        <div class="project-info">
+        <span class="project-category">Graphics Design</span>
+        <h3>Mobile App UI/UX</h3>
+        <p>User-centered design for a fintech mobile application.</p>
+        <div class="project-tags">
+            <span>Figma</span><span>Prototyping</span><span>User Research</span>
+        </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header text-center">
+      <div class="section-badge">Get In Touch</div>
+      <h2>Let's Build Something <span class="gradient-text">Amazing</span></h2>
+      <p class="section-subtitle">
+        Ready to start your project? Reach out and let's discuss how we can help bring your vision to life.
+      </p>
+    </div>
+
+    <!-- Contact Grid -->
+    <div class="contact-grid">
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your.email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info Card -->
+      <div class="contact-info-card">
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <p>DM@technologies.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p>+9618357003</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Location</h4>
+            <p>Kakinada, Andhra Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <h3>Ready to Get Started?</h3>
+          <p>Let's discuss your project and explore how we can help you achieve your goals.</p>
+          <div class="cta-line"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <h3 class="footer-logo">
+          DMTechnologies
+        </h3>
+        <p>Building innovative digital solutions that drive business growth.</p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.060a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21-.004-.42-.014-.629A10.025 10.025 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Machine Learning</a></li>
+          <li><a href="#services">Graphics Design</a></li>
+          <li><a href="#services">Consulting</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="divider"></div>
+      <div class="bottom-content">
+        <p>&copy; 2025 DMTechnologies Solutions. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+// ACTIVE NAV HIGHLIGHT ON SCROLL (premium touch)
+window.addEventListener('scroll', () => {
+  let current = '';
+  const sections = document.querySelectorAll('section[id]');
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// Make "Get Started" buttons in hero also scroll to contact
+document.querySelectorAll('a[href="#contact"]').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
