@@ -428,7 +428,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 24px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6); */
   transition: transform 0.4s ease;
 }
 
@@ -790,7 +790,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 90%;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(100, 150, 255, 0.2);
   border-radius: 16px;
@@ -1096,10 +1096,13 @@ html {
     font-size: 3.2rem;
   }
   .hero p {
-    min-height: 90vh;
+    min-height: 1.8rem0vh;
+  }
+  .about-text-content p.none1{
+    display:none;
   }
 
-  .about { padding: 8rem 5% 6rem; }
+  .about { padding: 3rem 5% 3rem; }
   .about-header h2 { font-size: 3rem; }
   .values-grid { gap: 2rem; }
 
@@ -1112,13 +1115,22 @@ html {
     padding: 2.8rem 1.8rem;
   }
 
-  .services { padding: 8rem 5% 6rem; }
-  .services-grid { gap: 2rem; }
-  .service-card { padding: 2.5rem 1.8rem; }
+  .services { padding: 3rem 5% 4rem; }
+  .services-grid { gap: 2rem; height:}
+  .service-card { padding: 2.5rem 1.8rem; height:350px}
+  .section-header .section-badge {
+    margin: 0 auto 0rem auto;
+  }
 
-  .portfolio { padding: 8rem 5% 6rem; }
+  .portfolio { padding: 1rem 5% 3rem; }
   .projects-grid { gap: 2.5rem; }
-  .project-image { height: 200px; }
+  .project-card {height: 400px }
+  .project-image { height: 80px; }
+
+
+  .contact {
+    padding: 3rem 5% 3rem;
+  }
 
   .footer {
     padding: 5rem 5% 2rem;
@@ -1143,6 +1155,8 @@ html {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-  /* .get-started-btn {
-    display: none;
-  } */
+
+      .about-content-grid{
+        margin-bottom: 2rem;
+      }
+}
