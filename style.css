@@ -1166,7 +1166,7 @@ html {
   }
 
   .about {
-    padding: 3rem 5% 3rem;
+    padding: 3rem 5% 5rem;
   }
   .about-header h2 {
     font-size: 3rem;
@@ -1174,7 +1174,9 @@ html {
   .values-grid {
     gap: 2rem;
   }
-
+  .services {
+    padding: 0rem 5% 2rem;
+  }
   .values-grid {
     grid-template-columns: 1fr;
     gap: 1.8rem;
@@ -1253,5 +1255,10 @@ html {
   .hero{
     //min-height:110vw;
     
+  }
+  .container{
+    //margin:0 auto;
+    //padding-left:30px;
+    padding-right:0;
   }
 }
